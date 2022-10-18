@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
+
+body {
+    max-width: 900px;
+    margin-inline: auto;
+    color: #000000;
+    background-color: #ffffff;
+    font-family: 'Inconsolata', monospace;
+}
+
+a {
+    color: #515151;
+    text-decoration: none;
+}
+
+::selection {
+    background-color: #bebebe;
+}
+
+::-moz-selection {
+    background-color: #bebebe;
+}
+
+#donate {
+    margin-inline: auto;
+    margin-bottom: 4vh;
+    padding: min(2vw, 20px);
+    text-align: center;
+    font-size: min(4vw, 20px);
+}
+
+#donate table {
+    margin-inline: auto;
+}
+
+#donate #bracket {
+    font-size: min(10vw, 45px);
+}
+
+#donate #slava {
+    white-space: pre;
+}
+
+#donate img.emoji {
+    width: 1em;
+    vertical-align: middle;
+}
+
+.donation {
+    padding: 10px;
+    font-size: min(6vw, 30px);
+    background-color: #bebebe;
+    border-radius: min(5vw, 15px);
+}
+
+.donation:hover {
+    color: #000000;
+    animation: wheatfield 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wheatfield {
+    100% {
+        background-color: #ffd700;
+    }
+}
+
+#banner {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    white-space: pre;
+}
+
+#console {
+    font-size: calc(6vw + 2vh);
+}
+
+#logo {
+    width: calc(20vh + 10vw);
+}
+
+#flag {
+    font-size: 10vw;
+    letter-spacing: normal;
+}
+
+#timer {
+    height: 20vw;
+    line-height: 20vw;
+    text-align: center;
+    border-radius: min(7vw, 20px);
+    background-color: #e84225;
+}
+
+#rocket {
+    width: min(10vw, 100px);
+    vertical-align: middle;
+    filter: invert(100%);
+}
+
+#rocket:hover {
+    animation: shake 0.125s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(1px) rotate(-3deg);
+    }
+    100% {
+        transform: translateY(2px) rotate(3deg);
+    }
+}
+
+#countdown {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: min(15vw, 100px);
+    line-height: normal;
+    color: #ffffff;
+}
+
+#code {
+    margin: 3vw;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: max(3vh, 25px);
+}
+
+#code-info {
+    width: 100%;
+    padding-top: 1vh;
+    text-align: center;
+    background-color: #e84225;
+    border-radius: 15px 15px 0 0;
+}
+
+#code-info button {
+    all: unset;
+}
+
+.code-block-icon, .code-copy-icon {
+    width: min(15vw, 80px);
+    padding: min(1%, 2px);
+}
+
+.code-block-icon:hover, .code-copy-icon:hover {
+    filter: invert(100%);
+    background-color: #17bdda;
+}
+
+.code-block-icon:active, .code-copy-icon:active {
+    animation: jump 0.1s;
+}
+
+@keyframes jump {
+    50% {
+        transform: translateY(3%);
+    }
+    100% {
+        translate: translateY(0px);
+    }
+}
+
+#snippet {
+    padding-left: 10px;
+    background-color: #282828;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+#snippet code {
+    filter: invert(100%) hue-rotate(60deg);
+}
+
+#info {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#info td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#info td p {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#info td p:hover {
+    animation: fade 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    100% {
+        background-color: #e84225;
+    }
+}
+
+#info td img {
+    width: calc(5vw + 100px);
+}
+
+#info td p {
+    font-size: min(4vw, 25px);
+    color: #ffffff;
+    background-color: #000000;
+    padding: min(3vw, 15px);
+    border-radius: min(3vw, 10px);
+}
+
+#legal {
+    text-align: center;
+    font-size: min(3vw, 20px);
+    color: #000000;
+    padding: min(3vw, 15px);
+    border-radius: min(3vw, 10px);
+}
+
+#made-with {
+    font-size: min(5vw, 25px);
+}
+
+#legal img.emoji {
+    width: 1em;
+    vertical-align: middle;
+}
+
+#legal td {
+    color: #ffffff;
+    background-color: #282828;
+    border-radius: min(3vw, 10px);
+}
+
+#legal a {
+    color: #ffaaaa;
+}
+
+#nest {
+    width: 100%;
+}
+
+#nest td {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#nest a {
+    color: #e84225;
+}
+
+#copyright {
+    bottom: 0;
+    right: 2vw;
+    position: fixed;
+    font-size: calc(1vw + 1.5vh);
+    opacity: 50%;
+}

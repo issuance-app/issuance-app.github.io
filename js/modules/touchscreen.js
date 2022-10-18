@@ -1,0 +1,1 @@
+isDeviceTouchscreen = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));

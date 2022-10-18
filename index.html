@@ -1,0 +1,164 @@
+<!----------------------------------------->
+<!--                                     -->
+<!--      https://www.issuance.app       -->
+<!--      Copyright © issuance.app       -->
+<!--             MIT License             -->
+<!--                                     -->
+<!----------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>issuance</title>
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="donate">
+            <table>
+                <tr>
+                    <td><p id="bracket">{</p></td>
+                    <td><p><b><span id="slava">_____________</span></b> &#x1F1FA;&#x1F1E6;; Donate today to stop the aggressors tomorrow</p></td>
+                    <td><p id="bracket">}</p></td>
+                </tr>
+            </table>
+            <a href="https://u24.gov.ua/" target="_blank" onmouseover="hryvniaMouseIn();" onmouseout="hryvniaMouseOut();" class="donation">DONATE</a>
+        </div>
+        <table id="banner">
+            <tr>
+                <th><p id="console">$ </p></th>
+                <th><img src="img/logo.png" id="logo"></th>
+                <th><p id="flag"> --it</p></th>
+            </tr>
+        </table>
+        <p></p>
+        <div id="timer">
+            <img src="img/material/rocket_launch_FILL1_wght700_GRAD200_opsz48.svg" id="rocket">
+            <p id="countdown">{}</p>
+        </div>
+        <div id="code">
+            <table id="code-info">
+                <tr>
+                    <td><button><a href="https://github.com/issuance-app" target="_blank"><img src="img/github/GitHub-Mark-120px-plus.png" class="code-block-icon"></a></button></td>
+                    <td><p>example.isu</p></td>
+                    <td><button onclick="copy_code();"><img src="img/material/content_copy_FILL1_wght700_GRAD200_opsz48.svg" class="code-copy-icon"></button></td>
+                </tr>
+            </table>
+            <div id="snippet">
+                <code class="prettyprint lang-bash">
+                    unlock "username" "password"<br>
+                    <br>
+                    push "/src"<br>
+                    comment --version="+0.0.1" "sum.py" "summation"<br>
+                    echo stack<br>
+                    backup "../isu"<br>
+                    <br>
+                    lock "username"<br>
+                </code>
+        </div>
+        <table id="info">
+            <tr>
+                <td><img src="img/material/archive_FILL1_wght700_GRAD200_opsz48.svg"></td>
+                <td><p id="info-archive">Backup & Prototype & Restore & ...</p></td>
+            </tr>
+            <tr>
+                <td><p id="info-encryption">Encryption? A <i>Necessity</i></p></td>
+                <td><img src="img/material/lock_FILL1_wght700_GRAD200_opsz48.svg"></td>
+            </tr>
+            <tr>
+                <td><img src="img/material/fingerprint_FILL1_wght700_GRAD200_opsz48.svg"></td>
+                <td><p id="info-privacy">Privacy; your files, not ours!</p></td>
+            </tr>
+            <tr>
+                <td><p id="info-open-source">Open Source; Forever</p></td>
+                <td><img src="img/material/groups_FILL1_wght700_GRAD200_opsz48.svg"></td>
+            </tr>
+            <tr>
+                <td><img src="img/material/attach_money_FILL1_wght700_GRAD200_opsz48.svg"></td>
+                <td><p id="info-free">Free, for Everyone</p></td>
+            </tr>
+        </table>
+        <div id="legal">
+            <table>
+                <p id="made-with">Made in &#x1F1EC;&#x1F1E7;, with &#x2764;</p>
+                <tr>
+                    <td><p>Copyright © [YEAR] issuance.app; Rights Reserved</p></td>
+                    <td><p>'issuance' is subject to the <a href="https://issuance.app/LICENSE">MIT license</a></p></td>
+                </tr>
+                <tr>
+                    <td><p>© UNITED24</p></td>
+                    <td>
+                        <p>The initiative of the President of Ukraine</p>
+                        <table id="nest">
+                            <tr>
+                                <td><p>u24.gov.ua Privacy Note: <a href="https://u24.gov.ua/privacy">u24.gov.ua/privacy</a></p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Twemoji by © Twitter, Inc.</p></td>
+                    <td>
+                        <p>Copyright [YEAR] Twitter, Inc and other contributors</p>
+                        <table id="nest">
+                            <tr>
+                                <td><p>Code licensed under the MIT License: <a href="https://opensource.org/licenses/MIT">opensource.org/licenses/MIT</a></p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Graphics licensed under CC-BY 4.0: <a href="https://creativecommons.org/licenses/by/4.0">creativecommons.org/licenses/by/4.0</a></p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Invertocat logo by © Github, Inc.</p></td>
+                    <td>
+                        <table id="nest">
+                            <tr>
+                                <td><p>Licensed by usage found at: <a href="https://github.com/logos">github.com/logos</a></p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Material Icons & <a href="https://github.com/googlearchive/code-prettify">code-prettify</a> by © Google, LLC.</p></td>
+                    <td>
+                        <table id="nest">
+                            <tr>
+                                <td><p>Licensed under Apache License Version 2.0: <a href="https://www.apache.org/licenses/LICENSE-2.0">apache.org/licenses/LICENSE-2.0</a></p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p><a href="https://github.com/googlefonts/Inconsolata">Inconsolata</a> by © The Inconsolata Project</p></td>
+                    <td>
+                        <table id="nest">
+                            <tr>
+                                <td><p>Licensed under SIL Open Font License 1.1: <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">scripts.sil.org/cms/scripts</a></p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p id="copyright"><a href="#legal">© [YEAR] issuance.app</a></p>
+    </body>
+    <script src="js/twemoji.js"></script>
+    <script src="js/modules/touchscreen.js"></script>
+    <script src="js/modules/math.js"></script>
+    <script src="js/modules/time.js"></script>
+    <script src="js/modules/string.js"></script>
+    <script src="js/modules/stryle.js"></script>
+    <script src="js/ukraine.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/copyright.js"></script>
+    <script src="js/legal.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/code.js"></script>
+    <script src="js/gradient.js"></script>
+</html>
