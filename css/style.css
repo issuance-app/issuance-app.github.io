@@ -125,6 +125,11 @@ a {
     color: #ffffff;
 }
 
+#delay {
+    text-align: center;
+    font-size: min(8vw, 20px);
+}
+
 #code {
     margin: 3vw;
     border-radius: 15px;
