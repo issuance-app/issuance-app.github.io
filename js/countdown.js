@@ -10,7 +10,7 @@ const ROCKET_LANDED_SRC = "img/material/rocket_FILL1_wght700_GRAD200_opsz48.svg"
 
 var landed = false;
 
-const RELEASE_TIMESTAMP = 1_667_779_200_000;
+const RELEASE_TIMESTAMP = 1_669_852_800_000;
 
 const COUNTDOWN_UNITS = {
         "hour": 3600_000,
