@@ -125,14 +125,9 @@ a {
     color: #ffffff;
 }
 
-#release {
+#apology {
     text-align: center;
     font-size: min(9vw, 24px);
-}
-
-#eta {
-    text-align: center;
-    font-size: min(8vw, 20px);
 }
 
 #code {
