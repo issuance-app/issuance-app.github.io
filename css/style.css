@@ -21,50 +21,6 @@ a {
     background-color: #bebebe;
 }
 
-#donate {
-    margin-inline: auto;
-    margin-bottom: 4vh;
-    padding: min(2vw, 20px);
-    text-align: center;
-    font-size: min(4vw, 20px);
-}
-
-#donate table {
-    margin-inline: auto;
-}
-
-#donate #bracket {
-    font-size: min(10vw, 45px);
-}
-
-#donate #slava {
-    white-space: pre;
-}
-
-#donate img.emoji {
-    width: 1em;
-    vertical-align: middle;
-}
-
-.donation {
-    padding: 10px;
-    font-size: min(6vw, 30px);
-    background-color: #bebebe;
-    border-radius: min(5vw, 15px);
-}
-
-.donation:hover {
-    color: #000000;
-    animation: wheatfield 0.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes wheatfield {
-    100% {
-        background-color: #ffd700;
-    }
-}
-
 #banner {
     margin: 0;
     display: flex;
